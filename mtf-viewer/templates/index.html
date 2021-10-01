@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="utf-8" />
+  <title>Hello world!</title>
+  <link type="text/css" rel="stylesheet"
+        href="{{ url_for('static',
+              filename='create.css')}}" />
+</head>
+<body>
+
+    <form method="POST">
+
+        <br>Camera Name:
+        <input name="cname" value={{nameDef}}>
+        <br><input type="submit">
+
+    </form>
+    <h2>{{transferName}}</h2>
+    <img src="./static/image.jpg" alt="Example Generated Image" >
+
+</body>
+</html>
